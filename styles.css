@@ -13,13 +13,22 @@
 }
 
 body {
-    background-color: 
+    background-color: ;
+    overflow-x: hidden;
 }
 
 section, footer {
     width: 100vw;
-    height: 50rem;
+    height: 40rem;
     margin: auto;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+.grey {
+    background-color: var(--background);
 }
 
 header {
@@ -69,7 +78,7 @@ a:hover {
     cursor: pointer;
 }
 
-img {
+#logo img {
     width: 90px;
     padding: 10px;
     margin-left: 50px;
@@ -79,6 +88,7 @@ img {
     border-bottom: 5px solid ;
     border-bottom-right-radius: 20%;
     background-color: var(--background);
+    height: 52rem;
 }
 
 #Home img {
@@ -99,20 +109,58 @@ img {
     font-size: 9rem;
 }
 
-#The-Video {
+.container {
+    position: relative;
+    left: 10vw;
+    width: 70vw;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#video-text {
-    font-size: 2rem;
+#video, #video-text {
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+.p-title {
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#Products h1 {
+    font-size: 3rem;
     text-align: center;
-    padding: 3rem 0;
-    justify-content: ;
+    position: relative;
+    left: -2rem;
 }
 
-#video {
-    justify-content: right;
+.product {
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 30rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product img {
+    margin-top: 80px;
+    width: 50%
+}
+
+.product input {
+    width: 15rem;
+    height: 4.5rem;
+    background-color: var(--darker-background);
+    border-radius: 35px;
 }
 
 footer {
