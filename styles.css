@@ -1,7 +1,9 @@
 :root {
     --background: #EEEDEB;
-    --border: #E1CCBE;
-    --texture: #757263;
+    --font:;
+    --header:;
+    --footer: #191919;
+    --darker-background: #757263;
 }
 
 * {
@@ -11,13 +13,20 @@
 }
 
 body {
-    background-color: var(--background);
+    background-color: 
+}
+
+section, footer {
+    width: 100vw;
+    height: 50rem;
+    margin: auto;
 }
 
 header {
     justify-content: space-around;
     display: flex;
     width: 100vw;
+    background-color: var(--background);
 }
 
 #logo {
@@ -26,14 +35,13 @@ header {
     width: 65%;
 }
 
-h2 {
+#logo h1 {
     align-content: center;
 }
 
 #nav-bar {
     align-content: center;
     justify-content: center;
-    width: 30%;
 }
 
 ul {
@@ -56,6 +64,11 @@ a {
     font-size: 1.5rem;
 }
 
+a:hover {
+    color: var(--texture);
+    cursor: pointer;
+}
+
 img {
     width: 90px;
     padding: 10px;
@@ -63,22 +76,48 @@ img {
 }
 
 #Home {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    border-bottom: 5px solid ;
+    border-bottom-right-radius: 20%;
+    background-color: var(--background);
 }
 
-#welcome {
+#Home img {
+    position: absolute;
+    top: 5rem;
+    width: 50rem;
+    opacity: 50%;
+    left: 30%; 
+    margin-left: -146px;
+}
+
+#Home h1 {
+    position: absolute;
+    left: 30%;
+    margin-left: -146px;
+    width: 40rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 9rem;
+}
+
+#The-Video {
+    display: flex;
+    justify-content: center;
+}
+
+#video-text {
     font-size: 2rem;
-    width: 400px;
     text-align: center;
     padding: 3rem 0;
+    justify-content: ;
 }
-#video {
 
+#video {
+    justify-content: right;
 }
-hr{
-    margin: 1rem 2rem;
-    border: 1px solid var(--texture);
+
+footer {
+    background-color: var(--footer);
+    color: #ffffff;
+    height: 150px;
+    border-top-left-radius: 20%;
 }
