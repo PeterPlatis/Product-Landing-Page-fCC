@@ -128,7 +128,7 @@ a:hover {
     align-items: space-around;
 }
 
-#video, .paragraph {
+#Video, .paragraph {
     min-width: 25rem;
     max-width: 40rem;
 }
@@ -209,7 +209,7 @@ p {
     font-size: 1.2rem;
 }
 
-#Email, #Message{
+#email, #Message{
     padding: 10px 20px;
     width: 30rem;
     height: 3rem;
@@ -221,7 +221,7 @@ p {
     text-wrap: wrap;
 }
 
-#Send {
+#submit {
     width: 5rem;
     height: 3rem;
     margin-top: 10px;
@@ -265,7 +265,7 @@ a {
     cursor: pointer;
 }
 
-.button:hover, #Send:hover{
+.button:hover, #submit:hover{
     background-color: var(--texture);
 }
 
