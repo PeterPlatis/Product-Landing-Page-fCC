@@ -1,9 +1,12 @@
 :root {
+    --white: #ffffff;
+    --black: #000000;
     --background: #EEEDEB;
-    --font:;
-    --header:;
     --footer: #191919;
-    --darker-background: #757263;
+    --texture: #2f3033;
+    --flexi: #398191;
+    --EP: #399152;
+    --LP: #822a32;
 }
 
 * {
@@ -69,13 +72,14 @@ a {
     white-space: nowrap;
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-size: 1.5rem;
 }
 
 a:hover {
     color: var(--texture);
     cursor: pointer;
+    font-weight: bold;
 }
 
 #logo img {
@@ -147,7 +151,7 @@ p {
     min-width: 20rem;
     max-width: 20rem;
     height: 30rem;
-    border: 2px solid black;
+    border: 2px solid var(--black);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -161,19 +165,19 @@ p {
     width: 60%;
     padding: 10px;
     border-radius: 100%;
-    border: 2px solid black;
+    border: 2px solid var(--black);
 }
 
 #product-1 {
-    background-color:#398191;
-}
-
-#product-3 {
-    background-color: #822a32;
+    background-color:var(--flexi);
 }
 
 #product-2 {
-    background-color:#399152;
+    background-color: var(--EP);
+}
+
+#product-3 {
+    background-color: var(--LP);
 }
 
 .product h2 {
@@ -187,14 +191,13 @@ p {
 .product input {
     width: 15rem;
     height: 4rem;
-    background-color: #000;
+    background-color: var(--black);
     border-radius: 35px;
     font-size: xx-large;
-    color: white;
+    color: var(--white);
 }
 
 .box {
-    /* border: 1px solid var(--darker-background); */
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -224,13 +227,13 @@ p {
     margin-top: 10px;
     border-radius: 300px;
     font-size: 1rem;
-    color: #fff;
-    background-color: black;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 footer {
     background-color: var(--footer);
-    color: #ffffff;
+    color: var(--white);
     height: 150px;
     border-top-right-radius: 70%;
     display: flex;
@@ -255,10 +258,16 @@ a {
 .fa-brands, .fab {
     width: 50px;
     height: 50px;
-    color: #fff;
+    color: var(--white);
 }
 
+.button {
+    cursor: pointer;
+}
 
+.button:hover, #Send:hover{
+    background-color: var(--texture);
+}
 
 img {
     animation: rotateScroll 10s linear infinite;
