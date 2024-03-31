@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: ;
     overflow-x: hidden;
@@ -24,7 +28,7 @@ section, footer {
 }
 
 section {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 .grey {
@@ -118,13 +122,18 @@ a:hover {
     justify-content: space-evenly;
 }
 
-#video, #video-text {
+.flex-section {
+    display: flex;
+    align-items: space-around;
+}
+
+#video, .paragraph {
     min-width: 25rem;
     max-width: 40rem;
 }
 
 .p-title {
-    margin: 20px 0;
+    margin: 2rem 0;
     font-size: 3rem;
 }
 
@@ -133,10 +142,8 @@ p {
 }
 
 #Products h1 {
-    font-size: 3rem;
-    text-align: center;
-    position: relative;
-    left: -2rem;
+    padding: 20px 380px 0 380px;
+    text-wrap: nowrap;
 }
 
 .product {
@@ -149,23 +156,62 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 0 3rem;
 }
 
 .product img {
-    margin-top: 80px;
+    margin-top: 2rem;
     width: 50%
+}
+
+.product h2, .product p{
+    margin-bottom: -3rem;
 }
 
 .product input {
     width: 15rem;
-    height: 4.5rem;
+    height: 4rem;
     background-color: var(--darker-background);
     border-radius: 35px;
+}
+
+.box {
+    /* border: 1px solid var(--darker-background); */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.box label {
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+#Email, #Message{
+    padding: 10px 20px;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 30px;
+}
+
+#Message {
+    height: 6rem;
+    text-wrap: wrap;
+}
+
+#Send {
+    width: 5rem;
+    height: 3rem;
+    margin-top: 10px;
+    border-radius: 300px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
 }
 
 footer {
     background-color: var(--footer);
     color: #ffffff;
     height: 150px;
-    border-top-left-radius: 20%;
+    border-top-left-radius: 70%;
 }
