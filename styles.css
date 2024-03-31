@@ -93,6 +93,7 @@ a:hover {
     border-bottom-right-radius: 20%;
     background-color: var(--background);
     height: 52rem;
+    padding-bottom: 850px;
 }
 
 #Home img {
@@ -161,7 +162,26 @@ p {
 
 .product img {
     margin-top: 2rem;
-    width: 50%
+    width: 60%;
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#product-1 {
+    background-color:#398191;
+}
+
+#product-3 {
+    background-color: #822a32;
+}
+
+#product-2 {
+    background-color:#399152;
+}
+
+.product h2 {
+    font-size: xx-large;
 }
 
 .product h2, .product p{
@@ -171,8 +191,10 @@ p {
 .product input {
     width: 15rem;
     height: 4rem;
-    background-color: var(--darker-background);
+    background-color: #000;
     border-radius: 35px;
+    font-size: xx-large;
+    color: white;
 }
 
 .box {
@@ -213,5 +235,28 @@ footer {
     background-color: var(--footer);
     color: #ffffff;
     height: 150px;
-    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: start;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    width: 0;
+}
+
+.fa-brands, .fab {
+    width: 50px;
+    height: 50px;
+    color: #fff;
 }
