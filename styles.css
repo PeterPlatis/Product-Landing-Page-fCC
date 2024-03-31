@@ -17,7 +17,6 @@ html {
 }
 
 body {
-    background-color: ;
     overflow-x: hidden;
 }
 
@@ -36,7 +35,6 @@ section {
 }
 
 header {
-    justify-content: space-around;
     display: flex;
     width: 100vw;
     background-color: var(--background);
@@ -44,7 +42,6 @@ header {
 
 #logo {
     display: flex;
-    justify-content: flex-start;
     width: 65%;
 }
 
@@ -60,7 +57,6 @@ header {
 ul {
     display: flex;
     justify-content: flex-end;
-    
 }
 
 li{
@@ -157,7 +153,7 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .product img {
@@ -202,6 +198,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-right: 20px;
 }
 
 .box label {
@@ -259,4 +256,59 @@ a {
     width: 50px;
     height: 50px;
     color: #fff;
+}
+
+
+
+img {
+    animation: rotateScroll 10s linear infinite;
+}
+
+@keyframes rotateScroll {
+0% {
+  transform: translate(0, 0) rotate();
+}
+100% {
+  transform: translate(0, 0) rotate(360deg);
+}
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+    }
+
+    section {
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .paragraph {
+        padding: 3rem
+    }
+
+    #Products .p-title {
+        padding: 0;
+    }
+
+    .product {
+        margin: 20px 0;
+    }
+
+    li {
+        margin: 0;
+    }
+    .nav-link {
+        padding: 12px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 500px;
+    }
 }
